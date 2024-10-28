@@ -1,0 +1,94 @@
+.btn_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+
+  position: relative;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+
+  /* background-color: var(--primary); */
+  /* background-image: url("https://i1.wp.com/blog.enriqueoriol.com/wp-content/uploads/2018/08/reduxLogo.png?fit=1024%2C684"); */
+
+  background-size: cover;
+
+  transition:  border-radius 0.2s, background-color 0.2s;
+
+
+  &.active,
+  &:hover {
+    border-radius: 16px;
+    background-color: var(--discord);
+  }
+
+
+
+
+
+
+  .img_home {
+    width: 24px;
+    /* height: 24px; */
+  }
+  .img_server {
+    width: 100%;
+    object-fit: cover;
+    /* height: 24px; */
+  }
+}
+
+
+
+.home {
+  background-color: #5865f2;
+}
+
+
+
+.notificacion {
+    &::before {
+        width: 9px;
+        height: 9px;
+        
+        position: absolute;
+        left: -17px;
+        background-color: white;
+        border-radius: 50%;
+        content: "";
+    }
+}
+
+
+.mensajes {
+    &::after {
+        background-color: var(--notification);
+        width: auto;
+        height: 16px;
+    
+        
+        padding: 0 4px;
+    
+        position: absolute;
+        bottom: -4px;
+        right: -4px;
+    
+        border-radius: 12px;
+        border: 4px solid var(--quaternary);
+    
+        text-align: right;
+        font-size: 13px;
+        font-weight: bold;
+        color: var(--white);
+        content: var(--mensaje);
+        /* display: none; */
+        /* content: ''; */
+    
+      }
+}
+

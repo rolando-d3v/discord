@@ -1,0 +1,26 @@
+.layout_content {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 71px 240px auto 240px;
+    grid-template-rows: 46px auto 52px;
+
+    grid-template-areas:     
+    'SERV NASE HECA HECA'
+    'SERV LICH CONT USLI'
+    'SERV INFU CONT USLI';
+
+}
+
+
+
+ /* 
+ 
+ SERV - Servidores
+ NASE - Name server
+ LICA - Lista de canales
+ INFU - Informacion de usuario 
+ HECA - Header canal 
+ CONT - Content canal 
+ LIMI - Lista de mienbros 
+
+  */

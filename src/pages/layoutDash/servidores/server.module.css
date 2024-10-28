@@ -1,0 +1,23 @@
+.content {
+  grid-area: SERV;
+  background-color: var(--tertiary);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 11px 0;
+
+  max-height: 100vh;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+.separador {
+  width: 32px;
+  border: 2px solid var(--quaternary);
+  margin-bottom: 8px;
+}
