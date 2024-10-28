@@ -5,7 +5,6 @@ import dev from "../../../assets/icons/rolando_d3v.png";
 import git from "../../../assets/icons/git.png";
 
 export default function ButtonServer({
-  selected,
   home,
   notificacion,
   mensaje,

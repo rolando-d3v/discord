@@ -7,7 +7,7 @@
     grid-template-areas:     
     'SERV NASE HECA HECA'
     'SERV LICH CONT USLI'
-    'SERV INFU CONT USLI';
+    'SERV INFO CONT USLI';
 
 }
 
@@ -18,7 +18,7 @@
  SERV - Servidores
  NASE - Name server
  LICA - Lista de canales
- INFU - Informacion de usuario 
+ INFO - Informacion de usuario 
  HECA - Header canal 
  CONT - Content canal 
  LIMI - Lista de mienbros 

@@ -18,19 +18,48 @@
 
   background-size: cover;
 
-  transition:  border-radius 0.2s, background-color 0.2s;
+  transition: border-radius 0.2s, background-color 0.2s;
 
-
-  &.active,
-  &:hover {
-    border-radius: 16px;
-    background-color: var(--discord);
+  &::before {
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    left: -18px;
+    background-color: white;
+    border-radius: 50%;
+    content: "";
+    transition: height 0.2s;
   }
 
 
+  &:hover {
+    border-radius: 16px;
+    background-color: var(--discord);
+
+    &::before {
+      width: 9px;
+      height: 20px;
+      position: absolute;
+      left: -18px;
+      border-radius: 10px;
+      background-color: white;
+      content: "";
+    }
+  }
 
 
-
+  &:focus, &:active {
+    border-radius: 16px;
+    &::before {
+      width: 9px;
+      height: 40px;
+      position: absolute;
+      left: -18px;
+      border-radius: 10px;
+      background-color: white;
+      content: "";
+    }
+  }
 
   .img_home {
     width: 24px;
@@ -43,52 +72,52 @@
   }
 }
 
-
-
 .home {
   background-color: #5865f2;
 }
 
-
-
 .notificacion {
-    &::before {
+  /* &::before {
         width: 9px;
-        height: 9px;
-        
+        height: 19px;
         position: absolute;
-        left: -17px;
+        left: -18px;
+        border-radius: 10px;
         background-color: white;
-        border-radius: 50%;
         content: "";
-    }
+    } */
+  /* &::before {
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    left: -18px;
+    background-color: white;
+    border-radius: 50%;
+    content: "";
+  } */
 }
-
 
 .mensajes {
-    &::after {
-        background-color: var(--notification);
-        width: auto;
-        height: 16px;
-    
-        
-        padding: 0 4px;
-    
-        position: absolute;
-        bottom: -4px;
-        right: -4px;
-    
-        border-radius: 12px;
-        border: 4px solid var(--quaternary);
-    
-        text-align: right;
-        font-size: 13px;
-        font-weight: bold;
-        color: var(--white);
-        content: var(--mensaje);
-        /* display: none; */
-        /* content: ''; */
-    
-      }
-}
+  &::after {
+    background-color: var(--notification);
+    width: auto;
+    height: 16px;
 
+    padding: 0 4px;
+
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+
+    border-radius: 12px;
+    border: 4px solid var(--quaternary);
+
+    text-align: right;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--white);
+    content: var(--mensaje);
+    /* display: none; */
+    /* content: ''; */
+  }
+}
