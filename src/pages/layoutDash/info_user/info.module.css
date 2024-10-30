@@ -11,6 +11,13 @@
   .profile {
     display: flex;
     align-items: center;
+    border-radius: 4px;
+    padding: 0px 4px;
+    transition: background 0.3s;
+
+    &:hover {
+      background: #3d3e45;
+    }
     .img_avatar {
       width: 32px;
       height: 32px;
