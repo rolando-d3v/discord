@@ -1,0 +1,26 @@
+.name_content {
+  grid-area: NASE;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 11px 0 16px;
+  align-items: center;
+  background-color: var(--secondary);
+
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px 0px;
+  z-index: 2;
+
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+
+    color: var(--white);
+  }
+
+  .icon_down {
+    width: 25px;
+    height: 25px;
+
+    color: var(--white);
+    cursor: pointer;
+  }
+}

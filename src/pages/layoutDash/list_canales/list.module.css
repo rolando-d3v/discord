@@ -1,0 +1,88 @@
+.list_content {
+  grid-area: LICA;
+
+  display: flex;
+  flex-direction: column;
+  padding: 24px 9.5px 0 16px;
+  background-color: var(--secondary);
+
+  .categoria {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+
+    > span {
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--gray);
+    }
+  }
+
+  .icon_add {
+    width: 21px;
+    height: 21px;
+    color: var(--symbol);
+    cursor: pointer;
+  }
+
+  .canal_button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    padding: 5px 3px;
+    border-radius: 5px;
+    background-color: transparent;
+
+    transition: background-color 0.2s;
+
+    > div {
+      display: flex;
+      align-items: center;
+    }
+
+    > div span {
+      margin-left: 5px;
+      color: var(--senary);
+    }
+
+    &:hover,
+    &.active {
+      background-color: var(--quinary);
+
+      > div span {
+        color: var(--white);
+      }
+    }
+  }
+
+  .icon_hash {
+    width: 20px;
+    height: 20px;
+  
+    color: var(--symbol);
+  }
+  .icon_add_user{
+    width: 16px;
+    height: 16px;
+  
+    margin-left: 4px;
+  
+    color: var(--symbol);
+    cursor: pointer;
+  
+    transition: color 0.2s;
+  
+    &:hover {
+      color: var(--white);
+    }
+  }
+
+
+
+
+
+}
