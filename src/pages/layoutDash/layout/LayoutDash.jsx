@@ -6,6 +6,8 @@ import ListCanales from '../list_canales/ListCanales'
 import NameServer from '../name_server/NameServer'
 import HeaderCanal from '../head_canal/HeaderCanal'
 import ContentData from '../content_data/ContetData'
+import ListUser from '../list_user/Listuser'
+import CanalData from '../canal_data/CanalData'
 
 export default function LayoutDash() {
   return (
@@ -16,6 +18,8 @@ export default function LayoutDash() {
       <ListCanales/>
       <HeaderCanal/>
       <ContentData/>
+      <ListUser/>
+      <CanalData/>
     </div>
   )
 }

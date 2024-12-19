@@ -9,5 +9,7 @@ export const data = {
     { id: 2, name: "React", mensaje: 14, img: redes },
     { id: 3, name: "Git", mensaje: 0, img: git },
     { id: 4, name: "React", mensaje: 1, img: js },
+ 
+    
   ],
 };

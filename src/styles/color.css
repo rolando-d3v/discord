@@ -1,24 +1,30 @@
-
-
 :root {
-    --primary: #36393f;
-    --secondary: #2f3136;
-    --tertiary: rgb(32,34,37);
-    --quaternary: #292b2f;
-    --quinary: #393d42;
-    --senary: #828386;
-    
-    --white: #fff;
-    --gray: #8a8c90;
-    --chat-input: rgb(64,68,75);
-    --symbol: #74777a;
+  --primary-discord: #202225;
+  /* --tertiary: #202225; */
 
-    --notification: #f84a4b;
-    --discord: #6e86d6;
-    --mention-detail: #f9a839;
-    --mention-message: #413f3f;
+  --secondary-discord: #2f3136;
+  /* --secondary: #2f3136; */
 
-    --link: #5d80d6;
+  --third-discord: #36393f;
+  /* --primary: #36393f; */
 
-    --rocketseat: #6633cc;
-  }
+  --fourth-discord: #292b2f;
+
+
+  
+
+  --quinary: #393d42;
+  --senary: #828386;
+
+  --white: #fff;
+  --gray: #8a8c90;
+  --chat-input: rgb(64, 68, 75);
+  --symbol: #74777a;
+
+  --notification: #f84a4b;
+  --discord: #6e86d6;
+  --mention-detail: #f9a839;
+  --mention-message: #413f3f;
+
+  --link: #5d80d6;
+}

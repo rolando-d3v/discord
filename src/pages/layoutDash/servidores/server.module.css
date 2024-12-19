@@ -1,6 +1,6 @@
 .content {
   grid-area: SERV;
-  background-color: var(--tertiary);
+  background-color: var(--primary-discord);
 
   display: flex;
   flex-direction: column;

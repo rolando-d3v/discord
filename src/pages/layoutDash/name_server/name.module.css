@@ -4,7 +4,7 @@
   justify-content: space-between;
   padding: 0 11px 0 16px;
   align-items: center;
-  background-color: var(--secondary);
+  background-color: var(--secondary-discord);
 
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px 0px;
   z-index: 2;
