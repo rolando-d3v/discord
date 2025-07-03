@@ -1,4 +1,3 @@
-import React from 'react'
 import css from './layout.module.css'
 import Server from '../servidores/Server'
 import InfoUser from '../info_user/InfoUser'
@@ -7,7 +6,7 @@ import NameServer from '../name_server/NameServer'
 import HeaderCanal from '../head_canal/HeaderCanal'
 import ContentData from '../content_data/ContetData'
 import ListUser from '../list_user/Listuser'
-import CanalData from '../canal_data/CanalData'
+// import CanalData from '../canal_data/CanalData'
 
 export default function LayoutDash() {
   return (
@@ -17,9 +16,9 @@ export default function LayoutDash() {
       <NameServer/>
       <ListCanales/>
       <HeaderCanal/>
-      <ContentData/>
       <ListUser/>
-      <CanalData/>
+      <ContentData/>
+      {/* <CanalData/> */}
     </div>
   )
 }

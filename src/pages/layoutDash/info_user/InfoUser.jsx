@@ -1,4 +1,3 @@
-import React from "react";
 import dev from "../../../assets/icons/rol_dev.png";
 import css from "./info.module.css";
 import * as Icons from "react-icons/fa";

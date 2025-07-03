@@ -1,4 +1,4 @@
-import React from "react";
+
 import css from "./list_user.module.css";
 
 export default function ListUser() {

@@ -1,4 +1,3 @@
-import React from 'react'
 import css from './canal_data.module.css'
 
 export default function CanalData() {

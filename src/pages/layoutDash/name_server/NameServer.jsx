@@ -1,4 +1,3 @@
-import React from "react";
 import css from "./name.module.css";
 import * as IconFa6 from "react-icons/fa6";
 

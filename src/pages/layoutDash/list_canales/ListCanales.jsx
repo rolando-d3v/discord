@@ -1,4 +1,3 @@
-import React from "react";
 import css from "./list.module.css";
 import * as IconFa6 from "react-icons/fa6";
 import * as IconMd from "react-icons/md";
