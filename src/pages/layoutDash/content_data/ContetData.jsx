@@ -25,7 +25,7 @@ export default function ContentData() {
           ))}
 
           <CanalMensaje
-            author="Diego Fernandes"
+            author="Rolando D3v - Rahemza"
             date="21/06/2020"
             content={
               <>
