@@ -1,9 +1,9 @@
-
 import css from "./list_user.module.css";
 
-export default function ListUser() {
+export default function ListUser({ activeSide }) {
   return (
-    <div className={css.list_user}>
+    <div className={`${css.list_user}   ${activeSide ? css.active_side : ""}`}>
+      {/* <div className={css.list_user  + (activeSide ? css.active_side : "")}> */}
       <div className={css.role}>Online - 8</div>
       <UserRow nickname={"Electron"} />
       <UserRow nickname={"Python"} isBot />

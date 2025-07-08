@@ -13,6 +13,24 @@
 
 
 
+@media (width < 1024px) {
+    .layout_content {
+        grid-template-columns: 71px 240px auto;
+
+
+        grid-template-areas:     
+        'SERV NASE HECA'
+        'SERV LICA CODA'
+        'SERV INFO CODA';
+    }
+}
+
+
+
+
+
+
+
  /* 
  
  SERV - Servidores

@@ -1,45 +1,57 @@
 .head_content {
   grid-area: HECA;
-
   display: flex;
   align-items: center;
-
-  padding: 0 17px;
+  justify-content: space-between;
   background-color: var(--third-discord);
-
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px 0px;
+  padding: 0 17px;
   z-index: 2;
 
+  .div_content {
+    display: flex;
+    align-items: center;
+    .icon_hash {
+      width: 22px;
+      height: 22px;
 
+      color: var(--symbol);
+    }
 
-  .icon_hash {
+    .title {
+      margin-left: 9px;
+
+      font-size: 16px;
+      font-weight: bold;
+
+      color: var(--white);
+    }
+
+    .separador {
+      height: 24px;
+      width: 1px;
+
+      background-color: var(--white);
+      opacity: 0.2;
+
+      margin: 0 13px;
+    }
+
+    .descripcion {
+      font-size: 15px;
+      color: var(--gray);
+    }
+  }
+
+  .icon_users {
     width: 22px;
     height: 22px;
-  
     color: var(--symbol);
-  }
+    display: none;
 
-  .title {
-    margin-left: 9px;
 
-    font-size: 16px;
-    font-weight: bold;
-
-    color: var(--white);
-  }
-
-  .separador {
-    height: 24px;
-    width: 1px;
-
-    background-color: var(--white);
-    opacity: 0.2;
-
-    margin: 0 13px;
-  }
-
-  .descripcion {
-    font-size: 15px;
-    color: var(--gray);
+    @media (width < 1024px) {
+      display: block;
+    }
   }
 }

@@ -6,17 +6,24 @@ import NameServer from '../name_server/NameServer'
 import HeaderCanal from '../head_canal/HeaderCanal'
 import ContentData from '../content_data/ContetData'
 import ListUser from '../list_user/Listuser'
+import { useState } from 'react'
 // import CanalData from '../canal_data/CanalData'
 
 export default function LayoutDash() {
+
+
+
+  const [activeSide, setActiveSide] = useState(false)
+
+
   return (
     <div  className={css.layout_content}  >
       <Server/>
       <InfoUser/>
       <NameServer/>
       <ListCanales/>
-      <HeaderCanal/>
-      <ListUser/>
+      <HeaderCanal  activeSide={activeSide}  setActiveSide={setActiveSide}/>
+      <ListUser activeSide={activeSide}  setActiveSide={setActiveSide}/>
       <ContentData/>
       {/* <CanalData/> */}
     </div>
