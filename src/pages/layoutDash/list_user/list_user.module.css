@@ -1,6 +1,6 @@
 .list_user {
   grid-area: USLI;
-  background-color: var(--secondary-discord);
+  background-color: var(--third-discord);
 
   display: flex;
   flex-direction: column;

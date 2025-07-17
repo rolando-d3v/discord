@@ -1,14 +1,10 @@
 :root {
-  --primary-discord: #202225;
-  /* --tertiary: #202225; */
+  --primary-discord: #121214;
+  --secondary-discord: #121214;
+  --third-discord: #1a1a1e;
 
-  --secondary-discord: #2f3136;
-  /* --secondary: #2f3136; */
 
-  --third-discord: #36393f;
-  /* --primary: #36393f; */
-
-  --fourth-discord: #292b2f;
+  --fourth-discord: #202024;
 
 
   
@@ -22,7 +18,8 @@
   --symbol: #74777a;
 
   --notification: #f84a4b;
-  --discord: #6e86d6;
+  /* --discord: #6e86d6; */
+  --discord: #5865f2;
   --mention-detail: #f9a839;
   --mention-message: #413f3f;
 

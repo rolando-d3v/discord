@@ -1,13 +1,13 @@
 .layout_content {
     height: 100vh;
     display: grid;
-    grid-template-columns: 71px 240px auto 240px;
-    grid-template-rows: 46px auto 52px;
+    grid-template-columns: 72px 303px auto 256px;
+    grid-template-rows: 48px auto 74px;
 
     grid-template-areas:     
     'SERV NASE HECA HECA'
     'SERV LICA CODA USLI'
-    'SERV INFO CODA USLI';
+    'INFO INFO CODA USLI';
 
 }
 
@@ -38,8 +38,7 @@
  LICA - Lista de canales
  INFO - Informacion de usuario 
  HECA - Header canal 
- CADA - canal data 
- CONT - Content canal 
- LIMI - Lista de mienbros 
+ USLI - User list 
+ CODA - contenedor de canal
 
   */

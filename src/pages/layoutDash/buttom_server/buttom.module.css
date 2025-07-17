@@ -2,40 +2,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
   width: 48px;
   height: 48px;
-  border-radius: 50%;
+  border-radius: 6px;
   margin-bottom: 8px;
-
   position: relative;
   cursor: pointer;
   border: 0;
   outline: none;
-
-  /* background-color: var(--primary); */
-  /* background-image: url("https://i1.wp.com/blog.enriqueoriol.com/wp-content/uploads/2018/08/reduxLogo.png?fit=1024%2C684"); */
-
-  background-size: cover;
-
+  background-color: transparent;
   transition: border-radius 0.2s, background-color 0.2s;
 
-  &::before {
-    width: 9px;
-    height: 9px;
-    position: absolute;
-    left: -18px;
-    background-color: white;
-    border-radius: 50%;
-    content: "";
-    transition: height 0.2s;
-  }
-
-
+  /* hover bola blanca */
   &:hover {
     border-radius: 16px;
-    background-color: var(--discord);
-
     &::before {
       width: 9px;
       height: 20px;
@@ -47,8 +27,9 @@
     }
   }
 
-
-  &:focus, &:active {
+  /* bola blanca mas grande al hacer click */
+  &:focus,
+  &:active {
     border-radius: 16px;
     &::before {
       width: 10px;
@@ -61,32 +42,64 @@
     }
   }
 
-  .img_home {
-    width: 24px;
-    /* height: 24px; */
-  }
-  .img_server {
-    width: 100%;
-    object-fit: cover;
-    /* height: 24px; */
-  }
-}
+  /* discord */
+  .img_server_home {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background-color: #212020;
+    outline: none;
+    border: none;
+    transition: border-radius 0.2s, background-color 0.2s;
 
-.home {
-  background-color: #5865f2;
-}
+    .img_home {
+      width: 24px;
+    }
 
-.notificacion {
-  /* &::before {
+    &:hover {
+      border-radius: 16px;
+      background-color: var(--discord);
+
+      &::before {
         width: 9px;
-        height: 19px;
+        height: 20px;
         position: absolute;
         left: -18px;
         border-radius: 10px;
         background-color: white;
         content: "";
-    } */
-  /* &::before {
+      }
+    }
+
+    &:focus,
+    &:active {
+      background-color: var(--discord);
+      border-radius: 16px;
+      &::before {
+        width: 10px;
+        height: 40px;
+        position: absolute;
+        left: -18px;
+        border-radius: 10px;
+        background-color: white;
+        content: "";
+      }
+    }
+  }
+
+  .img_server {
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+}
+
+.bola {
+  /* bola blanca */
+  &::before {
     width: 9px;
     height: 9px;
     position: absolute;
@@ -94,7 +107,16 @@
     background-color: white;
     border-radius: 50%;
     content: "";
-  } */
+    transition: height 0.2s;
+  }
+}
+
+
+
+
+
+.home {
+  background-color: transparent;
 }
 
 .mensajes {
@@ -117,7 +139,5 @@
     font-weight: bold;
     color: var(--white);
     content: var(--mensaje);
-    /* display: none; */
-    /* content: ''; */
   }
 }
