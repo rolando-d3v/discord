@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   width: 48px;
-  height: 48px;
+  height: 44px;
   border-radius: 6px;
   margin-bottom: 8px;
   position: relative;
@@ -57,36 +57,6 @@
     .img_home {
       width: 24px;
     }
-
-    &:hover {
-      border-radius: 16px;
-      background-color: var(--discord);
-
-      &::before {
-        width: 9px;
-        height: 20px;
-        position: absolute;
-        left: -18px;
-        border-radius: 10px;
-        background-color: white;
-        content: "";
-      }
-    }
-
-    &:focus,
-    &:active {
-      background-color: var(--discord);
-      border-radius: 16px;
-      &::before {
-        width: 10px;
-        height: 40px;
-        position: absolute;
-        left: -18px;
-        border-radius: 10px;
-        background-color: white;
-        content: "";
-      }
-    }
   }
 
   .img_server {
@@ -111,12 +81,21 @@
   }
 }
 
-
-
-
-
 .home {
   background-color: transparent;
+
+  &:hover {
+    .img_server_home {
+      background-color: var(--discord);
+    }
+  }
+
+  &:focus,
+  &:active {
+    .img_server_home {
+      background-color: var(--discord);
+    }
+  }
 }
 
 .mensajes {

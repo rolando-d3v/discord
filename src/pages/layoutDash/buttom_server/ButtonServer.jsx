@@ -1,7 +1,7 @@
 import css from "./buttom.module.css";
 import iconDiscord from "../../../assets/icons/discord.png";
 
-export default function ButtonServer({ home, notificacion, mensaje, serv }) {
+export default function ButtonServer({ home, mensaje, serv }) {
   return (
     <button
       // isHome={isHome}

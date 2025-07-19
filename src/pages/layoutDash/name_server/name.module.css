@@ -2,23 +2,41 @@
   grid-area: NASE;
   display: flex;
   justify-content: space-between;
-  padding: 0 11px 0 16px;
+  padding: 0 11px 0 10px;
   align-items: center;
   background-color: var(--secondary-discord);
 
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px 0px;
+  border-top: 1px solid var(--border-discord);
+  border-left: 1px solid var(--border-discord);
+  border-bottom: 1px solid var(--border-discord);
+  border-radius: 12px 0 0 0;
   z-index: 2;
 
-  .title {
-    font-size: 16px;
-    font-weight: bold;
+  .div_name_server {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    .icon {
+     width: 22px;
+      height: 22px;
+  
+  
+      mix-blend-mode: lighten;
+      background-color: white;
+    }
 
-    color: var(--white);
+    .title {
+      color: var(--white);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px !important;
+
+    }
   }
 
   .icon_down {
-    width: 25px;
-    height: 25px;
+    width: 14px;
+    height: 14px;
 
     color: var(--white);
     cursor: pointer;

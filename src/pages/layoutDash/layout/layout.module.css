@@ -2,9 +2,11 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 72px 303px auto 256px;
-    grid-template-rows: 48px auto 74px;
+    grid-template-rows: 32px 48px auto 68px;
+    background-color: var(--primary-discord);
 
     grid-template-areas:     
+    'HEAD HEAD HEAD HEAD'
     'SERV NASE HECA HECA'
     'SERV LICA CODA USLI'
     'INFO INFO CODA USLI';
@@ -18,7 +20,8 @@
         grid-template-columns: 71px 240px auto;
 
 
-        grid-template-areas:     
+        grid-template-areas:   
+        'HEAD HEAD HEAD'  
         'SERV NASE HECA'
         'SERV LICA CODA'
         'SERV INFO CODA';

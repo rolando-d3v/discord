@@ -6,6 +6,9 @@
   padding: 24px 9.5px 0 16px;
   background-color: var(--secondary-discord);
 
+  border-left: 1px solid var(--border-discord);
+  overflow-y: auto;
+
   .categoria {
     display: flex;
     align-items: center;

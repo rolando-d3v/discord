@@ -6,7 +6,9 @@ export default function InfoUser() {
   return (
     <div className={css.info_content}>
       <div className={css.profile}>
-        <img className={css.img_avatar} src={dev} alt="" />
+        <div className={css.div_img}>
+          <img className={css.img_avatar} src={dev} alt="Rolando D3v" />
+        </div>
         <p className={css.user_data}>
           <strong>Rolando D3v</strong>
           <span>En linea</span>

@@ -31,6 +31,72 @@ export default function ListCanales() {
           <IconMd.MdPersonAddAlt1  className={css.icon_add_user} />
         </div>
       </div>
+      
+      <div className={css.canal_button}>
+        <div>
+          <IconFa6.FaHashtag   className={css.icon_hash}  />
+          <span>Rolando dev </span>
+        </div>
+
+        <div>
+          <IconMd.MdPersonAddAlt1  className={css.icon_add_user} />
+        </div>
+      </div>
+      
+      <div className={css.canal_button}>
+        <div>
+          <IconFa6.FaHashtag   className={css.icon_hash}  />
+          <span>Rolando dev </span>
+        </div>
+
+        <div>
+          <IconMd.MdPersonAddAlt1  className={css.icon_add_user} />
+        </div>
+      </div>
+      
+      <div className={css.canal_button}>
+        <div>
+          <IconFa6.FaHashtag   className={css.icon_hash}  />
+          <span>Rolando dev </span>
+        </div>
+
+        <div>
+          <IconMd.MdPersonAddAlt1  className={css.icon_add_user} />
+        </div>
+      </div>
+      
+      <div className={css.canal_button}>
+        <div>
+          <IconFa6.FaHashtag   className={css.icon_hash}  />
+          <span>Rolando dev </span>
+        </div>
+
+        <div>
+          <IconMd.MdPersonAddAlt1  className={css.icon_add_user} />
+        </div>
+      </div>
+      
+      <div className={css.canal_button}>
+        <div>
+          <IconFa6.FaHashtag   className={css.icon_hash}  />
+          <span>Rolando dev </span>
+        </div>
+
+        <div>
+          <IconMd.MdPersonAddAlt1  className={css.icon_add_user} />
+        </div>
+      </div>
+      
+      <div className={css.canal_button}>
+        <div>
+          <IconFa6.FaHashtag   className={css.icon_hash}  />
+          <span>Rolando dev2 </span>
+        </div>
+
+        <div>
+          <IconMd.MdPersonAddAlt1  className={css.icon_add_user} />
+        </div>
+      </div>
     </div>
   );
 }

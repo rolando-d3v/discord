@@ -1,0 +1,23 @@
+.head_content {
+  grid-area: HEAD;
+  background-color: var(--primary-discord);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .div_head {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    .icon {
+      width: 19px;
+      height: 19px;
+    }
+
+    .text {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--white);
+    }
+  }
+}

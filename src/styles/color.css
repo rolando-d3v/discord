@@ -1,10 +1,23 @@
 :root {
   --primary-discord: #121214;
-  --secondary-discord: #121214;
+  --secondary-discord: #151416;
   --third-discord: #1a1a1e;
 
 
   --fourth-discord: #202024;
+
+
+  --border-discord: #272727;
+  --discord: #5865f2;
+  --notification: #f84a4b;
+  
+
+
+
+
+
+
+
 
 
   
@@ -17,9 +30,7 @@
   --chat-input: rgb(64, 68, 75);
   --symbol: #74777a;
 
-  --notification: #f84a4b;
   /* --discord: #6e86d6; */
-  --discord: #5865f2;
   --mention-detail: #f9a839;
   --mention-message: #413f3f;
 
