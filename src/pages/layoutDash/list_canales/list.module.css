@@ -3,89 +3,167 @@
 
   display: flex;
   flex-direction: column;
-  padding: 24px 9.5px 0 16px;
   background-color: var(--secondary-discord);
 
   border-left: 1px solid var(--border-discord);
-  overflow-y: auto;
+  border-top: 1px solid var(--border-discord);
+  border-radius: 12px 0 0 0;
+  position: relative;
 
-  .categoria {
+
+  .name_content {
+    height: 48px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin-bottom: 6px;
-
-    > span {
-      text-transform: uppercase;
-      font-size: 12px;
-      font-weight: 500;
-      color: var(--gray);
-    }
-  }
-
-  .icon_add {
-    width: 21px;
-    height: 21px;
-    color: var(--symbol);
-    cursor: pointer;
-  }
-
-  .canal_button {
-    display: flex;
+    padding: 0 11px 0 10px;
     align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-
-    padding: 5px 3px;
-    border-radius: 5px;
+    /* background-color: var(--secondary-discord); */
+    border-bottom: 1px solid var(--border-discord);
     background-color: transparent;
+    z-index: 2;
+    position: absolute;
+    top: 0px;
 
-    transition: background-color 0.2s;
-
-    > div {
+    .div_name_server {
       display: flex;
       align-items: center;
+      gap: 5px;
+      .icon {
+        width: 22px;
+        height: 22px;
+
+        mix-blend-mode: lighten;
+        background-color: white;
+      }
+
+      .title {
+        color: var(--white);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px !important;
+      }
     }
 
-    > div span {
-      margin-left: 5px;
-      color: var(--senary);
+    .icon_down {
+      width: 14px;
+      height: 14px;
+
+      color: var(--white);
+      cursor: pointer;
+    }
+  }
+
+  /* IMAGE BANNER */
+  .div_banner {
+    height: 132px;
+    width: 100%;
+    /* height: 84px; */
+    position: absolute;
+    top: 0;
+    /* width: 100%; */
+    .img_banner {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .lista_canales {
+    margin-top: 48px;
+    padding: 84px 9.5px 0 16px;
+    max-height: calc(100vh - 48px - 68px - 33px);
+    overflow-y: auto;
+    position: relative;
+    
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    
+    /* 🔷 color del scroll */
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background-color: #5f606a;
+        border-radius: 4px;
+      }
+    }
+    /* 🔷 color del fuera del scroll */
+    &::-webkit-scrollbar-track {
+      background-color: var(--secondary-discord);
+    }
+    
+    
+    .categoria {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+
+      > span {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--gray);
+      }
     }
 
-    &:hover,
-    &.active {
-      background-color: var(--quinary);
+    .icon_add {
+      width: 21px;
+      height: 21px;
+      color: var(--symbol);
+      cursor: pointer;
+    }
+
+    .canal_button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+
+      padding: 5px 3px;
+      border-radius: 5px;
+      background-color: transparent;
+
+      transition: background-color 0.2s;
+
+      > div {
+        display: flex;
+        align-items: center;
+      }
 
       > div span {
+        margin-left: 5px;
+        color: var(--senary);
+      }
+
+      &:hover,
+      &.active {
+        background-color: var(--quinary);
+
+        > div span {
+          color: var(--white);
+        }
+      }
+    }
+
+    .icon_hash {
+      width: 20px;
+      height: 20px;
+
+      color: var(--symbol);
+    }
+    .icon_add_user {
+      width: 16px;
+      height: 16px;
+
+      margin-left: 4px;
+
+      color: var(--symbol);
+      cursor: pointer;
+
+      transition: color 0.2s;
+
+      &:hover {
         color: var(--white);
       }
     }
   }
-
-  .icon_hash {
-    width: 20px;
-    height: 20px;
-  
-    color: var(--symbol);
-  }
-  .icon_add_user{
-    width: 16px;
-    height: 16px;
-  
-    margin-left: 4px;
-  
-    color: var(--symbol);
-    cursor: pointer;
-  
-    transition: color 0.2s;
-  
-    &:hover {
-      color: var(--white);
-    }
-  }
-
-
-
-
-
 }

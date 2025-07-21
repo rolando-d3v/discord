@@ -7,7 +7,7 @@
 
     grid-template-areas:     
     'HEAD HEAD HEAD HEAD'
-    'SERV NASE HECA HECA'
+    'SERV LICA HECA HECA'
     'SERV LICA CODA USLI'
     'INFO INFO CODA USLI';
 
@@ -22,7 +22,7 @@
 
         grid-template-areas:   
         'HEAD HEAD HEAD'  
-        'SERV NASE HECA'
+        'SERV LICA HECA'
         'SERV LICA CODA'
         'SERV INFO CODA';
     }
@@ -37,7 +37,6 @@
  /* 
  
  SERV - Servidores
- NASE - Name server
  LICA - Lista de canales
  INFO - Informacion de usuario 
  HECA - Header canal 
