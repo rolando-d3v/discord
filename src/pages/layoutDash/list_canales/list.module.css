@@ -8,8 +8,8 @@
   border-left: 1px solid var(--border-discord);
   border-top: 1px solid var(--border-discord);
   border-radius: 12px 0 0 0;
+  overflow: hidden;
   position: relative;
-
 
   .name_content {
     height: 48px;
@@ -17,12 +17,11 @@
     justify-content: space-between;
     padding: 0 11px 0 10px;
     align-items: center;
-    /* background-color: var(--secondary-discord); */
     border-bottom: 1px solid var(--border-discord);
-    background-color: transparent;
+
+    background-color: var(--secondary-discord);
     z-index: 2;
-    position: absolute;
-    top: 0px;
+    /* transition: background-color 0.3s ease; */
 
     .div_name_server {
       display: flex;
@@ -31,9 +30,6 @@
       .icon {
         width: 22px;
         height: 22px;
-
-        mix-blend-mode: lighten;
-        background-color: white;
       }
 
       .title {
@@ -55,28 +51,60 @@
 
   /* IMAGE BANNER */
   .div_banner {
-    height: 132px;
+    height: 130px;
     width: 100%;
-    /* height: 84px; */
     position: absolute;
     top: 0;
-    /* width: 100%; */
-    .img_banner {
+    right: 0;
+    background-size: cover;
+    /* transition: opacity 0.1s ease-in; */
+    
+    
+    
+    /* .img_banner {
+      background: transparent;
+      padding-right: 10px;
       width: 100%;
       height: 100%;
       object-fit: cover;
+    } */
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 50%
+      );
     }
   }
+
   .lista_canales {
-    margin-top: 48px;
-    padding: 84px 9.5px 0 16px;
+  
     max-height: calc(100vh - 48px - 68px - 33px);
-    overflow-y: auto;
+    overflow: hidden scroll;
     position: relative;
+    /* background-color: var(--secondary-discord); */
+  
+  
+    /* background-color: transparent; */
     
     &::-webkit-scrollbar {
-      width: 4px;
+      width: 4px; 
     }
+
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+    /* &::-webkit-scrollbar-track {
+      background-color: var(--secondary-discord);
+    }  */
     
     /* 🔷 color del scroll */
     &:hover {
@@ -84,86 +112,171 @@
         background-color: #5f606a;
         border-radius: 4px;
       }
+     
     }
-    /* 🔷 color del fuera del scroll */
-    &::-webkit-scrollbar-track {
+
+    .espacio {
+      height: 84px;
+      width: 100%;
+      background: transparent;
+    }
+    
+    .contenido {
+      padding: 4px 9.5px 0 16px;
+      width: 100%;
       background-color: var(--secondary-discord);
-    }
-    
-    
-    .categoria {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 6px;
+      z-index: 9;
+      box-shadow: -24px -14px -20px -34px #ff0101;
+      
+      
+      
+      
+      .acceso {
+        display: flex;
+        /* background-color: var(--secondary-discord); */
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 6px;
 
-      > span {
-        text-transform: uppercase;
-        font-size: 12px;
-        font-weight: 500;
-        color: var(--gray);
+
+        .text_icon {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+       
+          .icon {
+            width: 20px;
+            height: 20px;
+            fill: var(--symbol);
+
+          }
+
+          .text {
+            color: var(--symbol);
+            font-size: 0.75rem;
+            font-weight: 500;
+          }
+        }
+
+        .text_nuevo {
+          color:  #5462C7;
+          font-size: 0.7rem;
+          font-weight: 500;
+          background: #C7D2FF;
+          border-radius: 12px;
+          padding: 0px 8px;
+          line-height: 16px;
+        }
+
       }
-    }
 
-    .icon_add {
-      width: 21px;
-      height: 21px;
-      color: var(--symbol);
-      cursor: pointer;
-    }
 
-    .canal_button {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      cursor: pointer;
+      .div_separador {
+        margin: 15px 0;
+        border-top: 1px solid #9492921a;
+        
 
-      padding: 5px 3px;
-      border-radius: 5px;
-      background-color: transparent;
+      }
 
-      transition: background-color 0.2s;
-
-      > div {
+      .categoria {
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        margin-bottom: 6px;
+
+        > span {
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: 500;
+          color: var(--gray);
+        }
+      }
+      .icon_add {
+        width: 21px;
+        height: 21px;
+        color: var(--symbol);
+        cursor: pointer;
       }
 
-      > div span {
-        margin-left: 5px;
-        color: var(--senary);
-      }
 
-      &:hover,
-      &.active {
-        background-color: var(--quinary);
+
+
+
+      .canal_button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        padding: 5px 3px;
+        border-radius: 5px;
+        background-color: transparent;
+
+        transition: background-color 0.2s;
+
+        .div_icon_text {
+          display: flex;
+          align-items: center;
+
+
+          .icon {
+            width: 14px;
+            height: 14px;
+            color: var(--white);
+          }
+          .text {
+            color: var(--white);
+            font-size: 0.75rem;
+            font-weight: 500;
+          }
+        }
 
         > div span {
+          margin-left: 5px;
+          color: var(--senary);
+        }
+
+        &:hover,
+        &.active {
+          background-color: var(--quinary);
+
+          > div span {
+            color: var(--white);
+          }
+        }
+      }
+
+    
+      .icon_add_user {
+        width: 16px;
+        height: 16px;
+
+        margin-left: 4px;
+
+        color: var(--symbol);
+        cursor: pointer;
+
+        transition: color 0.2s;
+
+        &:hover {
           color: var(--white);
         }
       }
     }
+  }
+/* 
+  .scroll_change {
+    &::-webkit-scrollbar-track {
+      background-color: var(--secondary-discord);
+    } 
+  } */
 
-    .icon_hash {
-      width: 20px;
-      height: 20px;
+  .bg_transparent {
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+  }
 
-      color: var(--symbol);
-    }
-    .icon_add_user {
-      width: 16px;
-      height: 16px;
-
-      margin-left: 4px;
-
-      color: var(--symbol);
-      cursor: pointer;
-
-      transition: color 0.2s;
-
-      &:hover {
-        color: var(--white);
-      }
-    }
+  .img_transparent {
+    opacity: 0;
   }
 }
