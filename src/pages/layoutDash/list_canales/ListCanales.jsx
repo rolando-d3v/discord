@@ -88,6 +88,7 @@ export default function ListCanales() {
         <IconFa6.FaAngleDown className={css.icon_down} />
       </div>
 
+
       {/* IMAGE BANNER */}
       <div
 
@@ -98,9 +99,9 @@ export default function ListCanales() {
           activeTopScroll > 40 ? css.img_transparent : ""
         } `}
       >
-        {/* <img className={css.img_banner} src={banner} alt="baner" /> */}
+    
       </div>
-
+      <div className={css.espaciox}></div>
       <div
         ref={scrollRef}
         className={`${css.lista_canales}`}
@@ -227,6 +228,8 @@ export default function ListCanales() {
             </div>
           ))}
         </div>
+
+        
       </div>
     </div>
   );

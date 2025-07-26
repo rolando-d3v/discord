@@ -4,13 +4,13 @@ export default function ListUser({ activeSide }) {
   return (
     <div className={`${css.list_user}   ${activeSide ? css.active_side : ""}`}>
       {/* <div className={css.list_user  + (activeSide ? css.active_side : "")}> */}
-      <div className={css.role}>Online - 8</div>
-      <UserRow nickname={"Electron"} />
+      <div className={css.role}>Moderador 👮‍♂️ -- 1</div>
+      <UserRow nickname={"Elect"} />
       <UserRow nickname={"Python"} isBot />
       <UserRow nickname={"Redux"} />
       <UserRow nickname={"React Query"} />
 
-      <div className={css.role}>Offline - 18</div>
+      <div className={css.role}>Academia Lifetime 💎 -- 7</div>
       <UserRow nickname={"Koala"} />
       <UserRow nickname={"React"} />
       <UserRow nickname={"Node"} isBot />

@@ -8,6 +8,7 @@
 
   max-height: calc(100vh - 46px);
   overflow-y: scroll;
+  border-left: 1px solid var(--fourth-discord);
 
   @media (width < 1024px) {
     /* display: none; */
@@ -46,7 +47,7 @@
 .role {
   margin-top: 20px;
 
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 12px;
   font-weight: 500;
   color: var(--gray);
@@ -65,7 +66,7 @@
   background: transparent;
   transition: background 0.2s;
   &:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--fourth-discord);
   }
 
   > strong {
