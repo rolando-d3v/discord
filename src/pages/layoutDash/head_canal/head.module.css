@@ -13,6 +13,8 @@
   .div_content {
     display: flex;
     align-items: center;
+    width: 100%;
+
     .icon_hash {
       width: 17px;
       height: 17px;
@@ -22,6 +24,7 @@
 
     .title {
       margin-left: 9px;
+      width: clamp(150px, 100%, 160px);
 
       font-size: 16px;
       font-weight: bold;
@@ -45,15 +48,73 @@
     }
   }
 
-  .icon_users {
-    width: 22px;
-    height: 22px;
-    color: var(--symbol);
-    display: none;
+  .div_search {
+    min-width: 230px;
+    background-color: var(--bg-search);
+
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    border: 1px solid var(--border-discord);
+    position: relative;
+
+    .input_search {
+      position: absolute;
+      background-color: transparent;
+      width: 100%;
+      height: 30px;
+      border-radius: 8px;
+      border: none;
+      border: 1px solid var(--border-discord);
+      outline: none;
+      color: var(--white);
+      padding: 0 10px;
+      z-index: 2;
+    }
+    .icon_search {
+      position: absolute;
+      right: 4px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      color: var(--symbol);
+      margin-left: 10px;
+    }
+  }
+
+  .div_icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+
+    .svg_icon {
+      width: 20px;
+      height: 20px;
+      color: var(--symbol);
+      transition: color 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--white);
+      }
+    }
 
 
-    @media (width < 1024px) {
-      display: block;
+
+    .icon_punto {
+      ::before {
+        content: "";
+        width: 9px;
+        height: 9px;
+        background-color: var(--notification);
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        border-radius: 50%;
+        border: 2px solid var(--secondary-discord);
+      }
     }
   }
 }

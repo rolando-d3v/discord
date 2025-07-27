@@ -1,18 +1,20 @@
 import css from "./mensaje.module.css";
 
-const CanalMensaje = ({ author, date, content, hasMention, isBot }) => {
+const CanalMensaje = ({ author, date, content, hasMention, isBot, img }) => {
   return (
     <div className={`${css.container} ${hasMention ? css.mention : ""}`}>
-    
-      <div className={`${css.avatar} ${isBot ? css.bot : ""}`} />
-    
+      <div
+        style={{ backgroundImage: `url(${img})` }}
+        className={`${css.avatar} ${isBot ? css.bot : ""}`}
+      />
+
       <div className={css.message}>
         <div className={css.header}>
-          <strong>{author}</strong>
+          <strong className={css.author}  >{author}</strong>
 
-          {isBot && <span>Bot</span>}
+          {isBot && <span className={css.bot}>Bot</span>}
 
-          <time>{date}</time>
+          <time className={css.time}>{date}</time>
         </div>
         <div className={css.content}>{content}</div>
       </div>

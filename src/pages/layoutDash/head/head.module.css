@@ -12,6 +12,7 @@
     .icon {
       width: 19px;
       height: 19px;
+      border-radius: 4px;
     }
 
     .text {
@@ -23,7 +24,7 @@
 
   .content_icon {
     padding: 0 10px;
-    /* float: right; */
+    
 
     .svg {
       color: var(--symbol);

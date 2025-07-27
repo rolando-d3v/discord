@@ -1,12 +1,12 @@
 import css from "./head.module.css";
-import python from "../../../assets/icons/python.png";
+import midudev from "../../../assets/icons/icon_small.png";
 
 export default function Head() {
   return (
     <div className={css.head_content}>
       <div className={css.div_head}>
-        <img className={css.icon} src={python} alt="" />
-        <h6 className={css.text}>Python en Español</h6>
+        <img className={css.icon} src={midudev} alt="" />
+        <h6 className={css.text}>midudev - Aprende y Mejora en Programación JavaScript</h6>
       </div>
       <div className={css.content_icon}>
         <svg className={css.svg} viewBox="0 0 20 20">

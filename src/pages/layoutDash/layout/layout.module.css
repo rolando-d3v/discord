@@ -1,21 +1,23 @@
 .layout_content {
     height: 100vh;
     display: grid;
-    grid-template-columns: 72px 303px auto 256px;
+    grid-template-columns: 72px 303px auto;
     grid-template-rows: 32px 48px auto 68px;
     background-color: var(--primary-discord);
 
     grid-template-areas:     
-    'HEAD HEAD HEAD HEAD'
-    'SERV LICA HECA HECA'
-    'SERV LICA CODA USLI'
-    'INFO INFO CODA USLI';
+    'HEAD HEAD HEAD'
+    'SERV LICA HECA'
+    'SERV LICA CODA'
+    'INFO INFO CODA';
+    /* 'SERV LICA CODA USLI'
+    'INFO INFO CODA USLI'; */
 
 }
 
 
 
-@media (width < 1024px) {
+/* @media (width < 1024px) {
     .layout_content {
         grid-template-columns: 71px 240px auto;
 
@@ -27,7 +29,7 @@
         'INFO INFO CODA';
     }
 }
-
+ */
 
 
 

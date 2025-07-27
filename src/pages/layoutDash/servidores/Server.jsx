@@ -12,12 +12,7 @@ export default function Server() {
       {data.server.map((serv, index) => {
         return <ButtonServer key={index} notificacion serv={serv} mensaje />;
       })}
-      {/* <ButtonServer />
-      <ButtonServer notificacion  mensaje={3}   />
-      <ButtonServer  />
-      <ButtonServer  />
-      <ButtonServer notificacion  mensaje={10}  />
-      <ButtonServer /> */}
+    
     </div>
   );
 }
