@@ -16,7 +16,7 @@
     }
 
     .text {
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 500;
       color: var(--white);
     }
@@ -31,8 +31,14 @@
       margin: 0 10px;
       height: 20px;
       width: 20px;
+      cursor: pointer;
+      transition: color 0.2s;
 
-      ::before {
+      &:hover {
+        color: var(--white);
+      }
+
+      ::after {
         content: "";
         width: 9px;
         height: 9px;

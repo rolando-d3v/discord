@@ -91,7 +91,6 @@ export default function ListCanales() {
 
       {/* IMAGE BANNER */}
       <div
-
       style={{
         backgroundImage: `url(${banner})`,
       }}
@@ -99,15 +98,13 @@ export default function ListCanales() {
           activeTopScroll > 40 ? css.img_transparent : ""
         } `}
       >
-    
       </div>
-      <div className={css.espaciox}></div>
+      
       <div
         ref={scrollRef}
         className={`${css.lista_canales}`}
       >
         <div className={css.espacio}></div>
-
         <div className={css.contenido}>
           <div className={css.acceso}>
             <article className={css.text_icon}>
@@ -179,11 +176,11 @@ export default function ListCanales() {
           <div className={css.div_separador}></div>
 
           <div className={css.categoria}>
-            <span> {"{ ℹ SERVIDOR } >"} </span>
+            <span className={css.name_categoria} > {"{ ℹ SERVIDOR } >"} </span>
           </div>
 
           {canales.map((canal) => (
-            <div key={canal.id} className={css.canal_button}>
+            <button key={canal.id} className={css.canal_button}>
               <div className={css.div_icon_text}>
                 {canal.icon}
                 <span className={css.text}>{canal.name}</span>
@@ -192,14 +189,14 @@ export default function ListCanales() {
               <div>
                 <IconMd.MdPersonAddAlt1 className={css.icon_add_user} />
               </div>
-            </div>
+            </button>
           ))}
           <br />
           <div className={css.categoria}>
-            <span> {"{ 🌟 PREMIUM } > "} </span>
+            <span className={css.name_categoria} > {"{ 🌟 PREMIUM } > "} </span>
           </div>
           {canales.map((canal) => (
-            <div key={canal.id} className={css.canal_button}>
+            <button key={canal.id} className={css.canal_button}>
               <div className={css.div_icon_text}>
                 {canal.icon}
                 <span className={css.text}>{canal.name}</span>
@@ -208,15 +205,15 @@ export default function ListCanales() {
               <div>
                 <IconMd.MdPersonAddAlt1 className={css.icon_add_user} />
               </div>
-            </div>
+            </button>
           ))}
 
           <br />
           <div className={css.categoria}>
-            <span> {"{ ⭐ COMUNIDAD } > "} </span>
+            <span className={css.name_categoria} > {"{ ⭐ COMUNIDAD } > "} </span>
           </div>
           {canales.map((canal) => (
-            <div key={canal.id} className={css.canal_button}>
+            <button key={canal.id} className={css.canal_button}>
               <div className={css.div_icon_text}>
                 {canal.icon}
                 <span className={css.text}>{canal.name}</span>
@@ -225,7 +222,7 @@ export default function ListCanales() {
               <div>
                 <IconMd.MdPersonAddAlt1 className={css.icon_add_user} />
               </div>
-            </div>
+            </button>
           ))}
         </div>
 

@@ -10,7 +10,7 @@ export default function ButtonServer({ home, mensaje, serv }) {
       style={{
         "--mensaje": `"${serv?.mensaje}" `,
       }}
-      // backgroundImage: `url(${serv?.img})`,
+   
       className={`
         ${home && css.home}
         ${!home && css.bola}

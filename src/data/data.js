@@ -69,7 +69,7 @@ export const dataUser = {
       foto: avatar1,
       bot: false,
       mentions: false,
-      color_text: "##9955BB",
+      color_text: "#9955BB",
       fecha: "2025-07-23T09:03:00Z",
     },
     {
@@ -89,7 +89,7 @@ export const dataUser = {
       foto: avatar3,
       bot: false,
       mentions: false,
-      color_text: "##9955BB",
+      color_text: "#9955BB",
       fecha: "2025-07-23T09:05:00Z",
     },
     {
@@ -119,7 +119,7 @@ export const dataUser = {
       foto: avatar4,
       bot: false,
       mentions: false,
-      color_text: "##9955BB",
+      color_text: "#9955BB",
       fecha: "2025-07-23T09:08:00Z",
     },
     {
@@ -129,7 +129,7 @@ export const dataUser = {
       foto: avatar1,
       bot: false,
       mentions: false,
-      color_text: "##9955BB",
+      color_text: "#9955BB",
       fecha: "2025-07-23T09:09:00Z",
     },
     {
@@ -159,7 +159,7 @@ export const dataUser = {
       foto: avatar1,
       bot: false,
       mentions: false,
-      color_text: "##9955BB",
+      color_text: "#9955BB",
       fecha: "2025-07-23T09:12:00Z",
     },
     {

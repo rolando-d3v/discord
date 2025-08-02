@@ -1,5 +1,4 @@
 .list_user {
-  /* grid-area: USLI; */
   background-color: var(--third-discord);
   min-width: 256px;
   display: flex;
@@ -10,43 +9,28 @@
   overflow-y: scroll;
   border-left: 1px solid var(--fourth-discord);
 
-  @media (width < 1024px) {
-    /* display: none; */
-    /* position: fixed; */
-    /* right: -240px; */
-    /* top: 46px; */
-    /* bottom: 0; */
-    /* min-height: 100vh; */
-    /* width: 240px; */
-    transition: right 0.3s ease;
-    border-radius: 0;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
-    /* z-index: 2222 !important; */
-  }
-
   &::-webkit-scrollbar {
     width: 4px;
   }
 
-  &::-webkit-scrollbar-thumb {
-    background-color: var(--primary-discord);
-    border-radius: 4px;
-  }
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--symbol);
+      border-radius: 4px;
+    }
 
-  &::-webkit-scrollbar-track {
-    background-color: var(--secondary-discord);
+    &::-webkit-scrollbar-track {
+      background-color: var(--third-discord);
+    }
   }
 }
 
 .active_side {
   display: none;
-  /* right: 0; */
 }
 
 .role {
   margin-top: 20px;
-
   text-transform: capitalize;
   font-size: 12px;
   font-weight: 500;
@@ -69,22 +53,32 @@
     background: var(--fourth-discord);
   }
 
-  > strong {
+  .avatar {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+  .name {
     margin-left: 13px;
     font-weight: 500;
-    /* color: var(--white); */
     font-size: 0.9rem;
 
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    color: var(--color-user);
 
-    &.bot {
-      color: var(--mention-detail);
-    }
+  
   }
 
-  > span {
+  .color_bot{
+    color: #f9a839;
+  }
+
+  .bot {
     margin-left: 9px;
 
     background-color: var(--discord);
@@ -96,14 +90,4 @@
     font-weight: bold;
     font-size: 11px;
   }
-}
-
-.avatar {
-  flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  /* background-color: var(--primary-discord); */
 }
