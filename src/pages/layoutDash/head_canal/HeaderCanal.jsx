@@ -59,7 +59,7 @@ export default function HeaderCanal({ activeSide, setActiveSide }) {
         <svg
           width="20"
           height="20"
-          className={`${css.svg_icon} ${css.icon_punto}`} 
+          className={`${css.svg_icon} ${css.icon_punto}`}
           viewBox="0 0 20 20"
         >
           <foreignObject

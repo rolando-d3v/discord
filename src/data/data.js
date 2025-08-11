@@ -13,11 +13,12 @@ import avatar2 from "../assets/icons/avatar01.jpg";
 import avatar3 from "../assets/icons/avatar03.png";
 import avatar4 from "../assets/icons/rol_dev.png";
 import avatar5 from "../assets/icons/avatar02.png";
+import avatar6 from "../assets/icons/avatar05.png";
 
 
 
 
-
+// servidores
 export const data = {
   server: [
     { id: 1, name: "Midudev", mensaje: 242, img: midudev },
@@ -30,6 +31,7 @@ export const data = {
   ],
 };
 
+// usuarios
 export const dataUser = {
   server: [
     {
@@ -66,7 +68,7 @@ export const dataUser = {
       id: 4,
       nombre: "Lucía Díaz",
       mensaje: "Estoy conectada",
-      foto: avatar1,
+      foto: avatar6,
       bot: false,
       mentions: false,
       color_text: "#9955BB",

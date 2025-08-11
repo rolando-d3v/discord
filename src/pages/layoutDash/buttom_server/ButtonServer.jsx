@@ -4,13 +4,9 @@ import iconDiscord from "../../../assets/icons/discord.png";
 export default function ButtonServer({ home, mensaje, serv }) {
   return (
     <button
-      // isHome={isHome}
-      // hasNotifications={hasNotifications}
-      // mentions={mentions}
       style={{
         "--mensaje": `"${serv?.mensaje}" `,
       }}
-   
       className={`
         ${home && css.home}
         ${!home && css.bola}

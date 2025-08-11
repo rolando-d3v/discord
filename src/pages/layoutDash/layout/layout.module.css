@@ -10,28 +10,7 @@
     'SERV LICA HECA'
     'SERV LICA CODA'
     'INFO INFO CODA';
-    /* 'SERV LICA CODA USLI'
-    'INFO INFO CODA USLI'; */
-
 }
-
-
-
-/* @media (width < 1024px) {
-    .layout_content {
-        grid-template-columns: 71px 240px auto;
-
-
-        grid-template-areas:   
-        'HEAD HEAD HEAD'  
-        'SERV LICA HECA'
-        'SERV LICA CODA'
-        'INFO INFO CODA';
-    }
-}
- */
-
-
 
 
 

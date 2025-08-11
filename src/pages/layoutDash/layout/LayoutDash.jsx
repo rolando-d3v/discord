@@ -1,31 +1,24 @@
-import css from './layout.module.css'
-import Server from '../servidores/Server'
-import InfoUser from '../info_user/InfoUser'
-import ListCanales from '../list_canales/ListCanales'
-import HeaderCanal from '../head_canal/HeaderCanal'
-import ContentData from '../content_data/ContetData'
+import { useState } from "react";
+import css from "./layout.module.css";
 
-import { useState } from 'react'
-import Head from '../head/Head'
-// import CanalData from '../canal_data/CanalData'
+import Server from "../servidores/Server";
+import InfoUser from "../info_user/InfoUser";
+import ListCanales from "../list_canales/ListCanales";
+import HeaderCanal from "../head_canal/HeaderCanal";
+import ContentData from "../content_data/ContetData";
+import Head from "../head/Head";
 
 export default function LayoutDash() {
-
-
-
-  const [activeSide, setActiveSide] = useState(false)
-
+  const [activeSide, setActiveSide] = useState(false);
 
   return (
-    <div  className={css.layout_content}  >
-      <Head/>
-      <Server/>
-      <InfoUser/>
-      <ListCanales/>
-      <HeaderCanal  activeSide={activeSide}  setActiveSide={setActiveSide}/>
-
-      <ContentData  activeSide={activeSide} setActiveSide={setActiveSide} />
- 
+    <div className={css.layout_content}>
+      <Head />
+      <Server />
+      <InfoUser />
+      <ListCanales />
+      <HeaderCanal activeSide={activeSide} setActiveSide={setActiveSide} />
+      <ContentData activeSide={activeSide} setActiveSide={setActiveSide} />
     </div>
-  )
+  );
 }

@@ -12,7 +12,6 @@ export default function Server() {
       {data.server.map((serv, index) => {
         return <ButtonServer key={index} notificacion serv={serv} mensaje />;
       })}
-    
     </div>
   );
 }

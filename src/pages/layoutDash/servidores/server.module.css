@@ -18,6 +18,5 @@
 
 .separador {
   width: 32px;
-  border: 2px solid var(--quaternary);
   margin-bottom: 8px;
 }
