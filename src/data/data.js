@@ -14,6 +14,13 @@ import avatar3 from "../assets/icons/avatar03.png";
 import avatar4 from "../assets/icons/rol_dev.png";
 import avatar5 from "../assets/icons/avatar02.png";
 import avatar6 from "../assets/icons/avatar05.png";
+import avatar7 from "../assets/icons/avatar08.png";
+import avatar8 from "../assets/icons/avatar09.png";
+import avatar9 from "../assets/icons/avatar10.png";
+import avatar10 from "../assets/icons/avatar11.png";
+import avatar11 from "../assets/icons/avatar12.png";
+import avatar12 from "../assets/icons/avatar13.png";
+
 
 
 
@@ -98,7 +105,7 @@ export const dataUser = {
       id: 7,
       nombre: "Daniela Paredes",
       mensaje: "Perfecto, gracias",
-      foto: avatar1,
+      foto: avatar8,
       bot: false,
       mentions: true,
       color_text: "#2AAE63",
@@ -106,26 +113,6 @@ export const dataUser = {
     },
     {
       id: 8,
-      nombre: "Bot Seguridad",
-      mensaje: "Se detectó un nuevo inicio de sesión",
-      foto: avatar2,
-      bot: false,
-      mentions: false,
-      color_text: "#2AAE63",
-      fecha: "2025-07-23T09:07:00Z",
-    },
-    {
-      id: 9,
-      nombre: "Raúl Vega",
-      mensaje: "Voy saliendo",
-      foto: avatar4,
-      bot: false,
-      mentions: false,
-      color_text: "#9955BB",
-      fecha: "2025-07-23T09:08:00Z",
-    },
-    {
-      id: 10,
       nombre: "Claudia Medina",
       mensaje: "Nos vemos luego",
       foto: avatar1,
@@ -135,30 +122,50 @@ export const dataUser = {
       fecha: "2025-07-23T09:09:00Z",
     },
     {
-      id: 11,
+      id: 9,
       nombre: "Bot Notificaciones",
       mensaje: "Tienes 3 mensajes nuevos",
-      foto: avatar2,
+      foto: avatar12,
       bot: false,  
       mentions: false,
       color_text: "#9955BB",
       fecha: "2025-07-23T09:10:00Z",
     },
     {
-      id: 12,
+      id: 10,
+      nombre: "Raúl Vega",
+      mensaje: "Voy saliendo",
+      foto: avatar7,
+      bot: false,
+      mentions: false,
+      color_text: "#9955BB",
+      fecha: "2025-07-23T09:08:00Z",
+    },
+    {
+      id: 11,
       nombre: "Esteban Torres",
       mensaje: "Te paso el archivo",
-      foto: avatar5,
+      foto: avatar10,
       bot: false,
       mentions: false,
       color_text: "#2AAE63",
       fecha: "2025-07-23T09:11:00Z",
     },
     {
+      id: 12,
+      nombre: "Bot Seguridad",
+      mensaje: "Se detectó un nuevo inicio de sesión",
+      foto: avatar9,
+      bot: false,
+      mentions: false,
+      color_text: "#2AAE63",
+      fecha: "2025-07-23T09:07:00Z",
+    },
+    {
       id: 13,
       nombre: "María Fernanda",
       mensaje: "Sí, estoy de acuerdo",
-      foto: avatar1,
+      foto: avatar11,
       bot: false,
       mentions: false,
       color_text: "#9955BB",

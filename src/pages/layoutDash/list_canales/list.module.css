@@ -15,14 +15,13 @@
   .name_content {
     height: 48px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 0 11px 0 10px;
-    align-items: center;
-    border-bottom: 1px solid var(--border-discord);
 
+    border-bottom: 1px solid var(--border-discord);
     background-color: var(--secondary-discord);
     z-index: 2;
-    /* transition: background-color 0.3s ease; */
 
     .div_name_server {
       display: flex;
@@ -37,17 +36,21 @@
         color: var(--white);
         font-size: 16px;
         font-weight: 500;
-        line-height: 20px !important;
       }
     }
 
     .icon_down {
       width: 14px;
       height: 14px;
-
       color: var(--white);
       cursor: pointer;
     }
+  }
+
+  /* transparent al hacer scroll */
+  .bg_transparent {
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
   }
 
   /* IMAGE BANNER */
@@ -58,7 +61,7 @@
     top: 0;
     right: 0;
     background-size: cover;
-  
+    opacity: 1;
 
     &::before {
       content: "";
@@ -74,63 +77,57 @@
       );
     }
   }
+  /* opacity img al hacer scroll */
+  .img_opacity {
+    opacity: 0;
+  }
 
   .lista_canales {
-  
-    max-height: calc(100vh - 48px - 68px - 33px);
+    max-height: calc(100vh - 48px - 68px - 32px);
     overflow: hidden scroll;
     position: relative;
-    box-sizing: border-box;
 
 
     &::-webkit-scrollbar {
-      z-index: 999;
-      width: 4px; 
+      width: 4px;
     }
 
-
-    &::-webkit-scrollbar-track {
-      background-color: transparent;
-    }
-  
     /* 🔷 color del scroll */
     &:hover {
       &::-webkit-scrollbar-thumb {
         background-color: #5f606a;
         border-radius: 4px;
       }
-     
+      &::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
     }
 
     .espacio {
       height: 84px;
       width: 100%;
-      top: 80px;
       background: transparent;
     }
-    
-    
+
     .contenido {
       padding: 40px 9.5px 0 16px;
       width: 100%;
-      
+
       .acceso {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 6px;
 
-
         .text_icon {
           display: flex;
           align-items: center;
           gap: 8px;
-       
+
           .icon {
             width: 20px;
             height: 20px;
             fill: var(--symbol);
-
           }
 
           .text {
@@ -141,107 +138,86 @@
         }
 
         .text_nuevo {
-          color:  #5462C7;
+          color: #5462c7;
           font-size: 0.8rem;
           font-weight: 500;
-          background: #C7D2FF;
+          background: #c7d2ff;
           border-radius: 12px;
           padding: 0px 6px;
           line-height: 20px;
         }
-
       }
-
 
       .div_separador {
         margin: 15px 0;
         border-top: 1px solid #9492921a;
-        
-
       }
 
       .categoria {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 6px;
+        flex-direction: column;
 
         .name_categoria {
           text-transform: uppercase;
+          text-align: start;
           font-size: 12px;
           font-weight: 500;
           color: var(--gray);
+          margin-bottom: 6px;
         }
-      }
-      
 
-
-
-      .canal_button {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        cursor: pointer;
-
-        padding: 5px 3px;
-        border-radius: 5px;
-        border: none;
-        background-color: transparent;
-
-        transition: background-color 0.2s;
-
-        .div_icon_text {
+        .canal_button {
+          width: 100%;
           display: flex;
           align-items: center;
+          justify-content: space-between;
+          cursor: pointer;
 
+          padding: 5px 3px;
+          border-radius: 5px;
+          border: none;
+          background-color: transparent;
 
-          .icon {
-            width: 14px;
-            height: 14px;
-            color: var(--white);
+          transition: background-color 0.2s;
+
+          &:hover,
+          &:focus,
+          &.active {
+            background-color: var(--hover-list);
           }
-          .text {
-            color: var(--white);
-            font-size: 0.85rem;
-            font-weight: 500;
-            margin-left: 5px;
+
+          .div_icon_text {
+            display: flex;
+            align-items: center;
+
+            .icon {
+              width: 14px;
+              height: 14px;
+              color: var(--white);
+            }
+            .text {
+              color: var(--white);
+              font-size: 0.85rem;
+              font-weight: 500;
+              margin-left: 5px;
+            }
           }
-        }
 
- 
-        &:hover,
-        &:focus,
-        &.active {
-          background-color: var(--hover-list);
-        }
-      }
+          .icon_add_user {
+            width: 16px;
+            height: 16px;
 
-    
-      .icon_add_user {
-        width: 16px;
-        height: 16px;
+            color: var(--symbol);
+            cursor: pointer;
 
-        margin-left: 4px;
+            transition: color 0.2s;
 
-        color: var(--symbol);
-        cursor: pointer;
-
-        transition: color 0.2s;
-
-        &:hover {
-          color: var(--white);
+            &:hover {
+              color: var(--white);
+            }
+          }
         }
       }
     }
-  }
-
-  .bg_transparent {
-    background-color: transparent;
-    border-bottom: 1px solid transparent;
-  }
-
-  .img_transparent {
-    opacity: 0;
   }
 }

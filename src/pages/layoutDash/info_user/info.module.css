@@ -2,13 +2,13 @@
   grid-area: INFO;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
   padding: 8px;
   margin: 0px 9px 9px 9px;
   border-radius: 8px;
   background-color: var(--fourth-discord);
   gap: 8px;
+  
   .profile {
     display: flex;
     align-items: center;
@@ -41,7 +41,6 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        position: relative;
       }
     }
   }
@@ -51,13 +50,13 @@
     display: flex;
     flex-direction: column;
 
-    > strong {
+    .name {
       color: var(--white);
       font-size: 13px;
       display: block;
       font-weight: 500;
     }
-    > span {
+    .status {
       color: var(--gray);
       font-size: 13px;
     }
@@ -66,12 +65,10 @@
   .list_icons {
     display: flex;
     align-items: center;
+    gap: 15px;
 
-    > svg:not(:first-child) {
-      margin-left: 15px;
-    }
 
-    .micro {
+    .icon {
       width: 20px;
       height: 20px;
 
