@@ -8,7 +8,7 @@ export default function HeaderCanal({ activeSide, setActiveSide }) {
       <div className={css.div_content}>
         <IconFa6.FaHashtag className={css.icon_hash} />
 
-        <h5 className={css.title}>💬╏chat-general</h5>
+        <span className={css.title}>💬╏chat-general</span>
 
         <div className={css.separador}></div>
 

@@ -4,9 +4,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: var(--third-discord);
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px 0px;
   padding: 0 17px;
-  z-index: 2;
   border-bottom: 1px solid var(--border-discord);
   border-top: 1px solid var(--border-discord);
 
@@ -18,27 +16,21 @@
     .icon_hash {
       width: 17px;
       height: 17px;
-
       color: var(--symbol);
     }
 
     .title {
       margin-left: 9px;
-      width: clamp(150px, 100%, 160px);
-
       font-size: 16px;
       font-weight: bold;
-
       color: var(--white);
     }
 
     .separador {
-      height: 24px;
-      width: 1px;
-
+      height: 4px;
+      width: 4px;      
       background-color: var(--white);
       opacity: 0.2;
-
       margin: 0 13px;
     }
 
@@ -48,45 +40,12 @@
     }
   }
 
-  .div_search {
-    min-width: 230px;
-    background-color: var(--bg-search);
 
-    height: 30px;
-    border-radius: 8px;
-    border: none;
-    border: 1px solid var(--border-discord);
-    position: relative;
-
-    .input_search {
-      position: absolute;
-      background-color: transparent;
-      width: 100%;
-      height: 30px;
-      border-radius: 8px;
-      border: none;
-      border: 1px solid var(--border-discord);
-      outline: none;
-      color: var(--white);
-      padding: 0 10px;
-      z-index: 2;
-    }
-    .icon_search {
-      position: absolute;
-      right: 4px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 18px;
-      height: 18px;
-      color: var(--symbol);
-      margin-left: 10px;
-    }
-  }
 
   .div_icon {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     padding: 0 10px;
 
     .svg_icon {
@@ -107,7 +66,7 @@
       ::before {
         content: "";
         width: 9px;
-        height: 9px;
+        height: 10px;
         background-color: var(--notification);
         position: absolute;
         bottom: 0px;
@@ -115,6 +74,40 @@
         border-radius: 50%;
         border: 2px solid var(--secondary-discord);
       }
+    }
+  }
+
+
+    .div_search {
+    min-width: 230px;
+    background-color: var(--bg-search);
+
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    border: 1px solid var(--border-discord);
+    position: relative;
+
+    .input_search {
+      position: absolute;
+      background-color: transparent;
+      width: 100%;
+      height: 32px;
+      border-radius: 8px;
+      border: none;
+      border: 1px solid var(--border-discord);
+      outline: none;
+      color: var(--white);
+      padding: 0 10px;
+      z-index: 2;
+    }
+    .icon_search {
+      position: absolute;
+      right: 5px;
+      bottom: 6px;
+      width: 18px;
+      height: 18px;
+      color: var(--symbol);  
     }
   }
 }

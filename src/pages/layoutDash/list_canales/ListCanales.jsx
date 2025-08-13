@@ -46,7 +46,7 @@ const canales = [
 ];
 
 export default function ListCanales() {
-  const [activeTopScroll, setActiveTopScroll] = useState(false);
+  const [activeTopScroll, setActiveTopScroll] = useState(0);
 
   const scrollRef = useRef(null);
 
@@ -220,6 +220,7 @@ export default function ListCanales() {
           </div>
         </div>
       </div>
+      
     </div>
   );
 }
