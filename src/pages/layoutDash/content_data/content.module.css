@@ -13,12 +13,12 @@
     padding-right: 6px;
     width: 100%;
 
-    .content_mensajes {
+    /* .content_mensajes {
       padding: 20px 0px;
 
       display: flex;
       flex-direction: column;
-    }
+    } */
   }
 
   .messages {
@@ -45,14 +45,10 @@
     }
   }
 
-  .input_wrapper {
+  .input_div {
     width: 100%;
     padding: 0px 8px 18px 8px;
-    z-index: 1;
-    display: flex;
-    background-color: red;
-    background-color: var(--third-discord);
-
+    
     .input_container {
       width: 100%;
       background-color: var(--fourth-discord);
@@ -79,15 +75,10 @@
         width: 100%;
         height: 100%;
         background-color: transparent;
+        /* background-color: RED; */
         outline: none;
         border: none;
-
-        padding: 0 10px 0 8px;
-        border-radius: 7px;
-
         color: var(--white);
-
-        position: relative;
 
         &::placeholder {
           color: var(--gray);
@@ -99,7 +90,7 @@
         align-items: center;
         color: var(--gray);
         gap: 14px;
-        padding: 6px 18px 6px 18px;
+        padding: 0 18px;
         
         .icon_input {
           cursor: pointer;
@@ -114,9 +105,5 @@
     }
   }
 
-  .input_icon {
-    width: 24px;
-    height: 24px;
-    color: var(--gray);
-  }
+
 }

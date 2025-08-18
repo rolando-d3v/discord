@@ -19,8 +19,8 @@ export default function ListUser({ activeSide }) {
       <div className={css.role}>Academia Lifetime 💎 -- 7</div>
       {dataUser.server?.map((n) => (
         <UserRow
+        key={n.id}
           nickname={n.nombre}
-          key={n.id}
           isBot={n.bot}
           foto={n.foto}
           color_text={n.color_text}
@@ -39,7 +39,6 @@ const UserRow = ({ nickname, isBot, foto, color_text }) => {
       />
       <strong
         className={`${css.name} ${ isBot && css.color_bot}  `}
-        //  style={{ color: isBot ? "#f9a839" : color_text }}
         style={{
           "--color-user": `${color_text}`,
         }}

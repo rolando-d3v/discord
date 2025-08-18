@@ -25,17 +25,15 @@ export default function ContentData({ activeSide, setActiveSide }) {
               key={n.id}
               author={n.nombre}
               date={n.fecha}
-              content={n.mensaje}
+              mensaje={n.mensaje}
               isBot={n.bot}
               img={n.foto}
               hasMention={n.mentions}
             />
           ))}
-        
-
         </div>
 
-        <div className={css.input_wrapper}>
+        <div className={css.input_div}>
           <div className={css.input_container}>
             <svg
               aria-hidden="true"
